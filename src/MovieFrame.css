@@ -3,9 +3,9 @@
     width: 93.25vw;
     top: 23px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3개의 열을 가진 그리드 */
-    grid-auto-rows: minmax(57.3125vw, auto); /* 행의 높이를 자동으로 조정 */
-    grid-gap: 10px; /* 열과 행 사이의 간격 설정 */
+    grid-template-columns: repeat(4, 1fr); /* 3개의 열을 가진 그리드 */
+    grid-auto-rows: minmax(38.2vw, auto); /* 행의 높이를 자동으로 조정 */
+    grid-gap: 20px; /* 열과 행 사이의 간격 설정 */
   }
   
   .grid-item {
