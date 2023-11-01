@@ -1,0 +1,7 @@
+.Movies {
+  position: relative;
+  background-color: #24234B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

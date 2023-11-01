@@ -11,7 +11,9 @@ function MovieFrame() {
           title={movieInfo.title}
           score={movieInfo.vote_average}
           description={movieInfo.overview}
+          movieInfo = {movieInfo}
           src = {movieInfo.poster_path}
+          index = {index}
         />
       ))}
     </div>

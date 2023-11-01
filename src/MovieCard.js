@@ -1,8 +1,10 @@
 import "./MovieCard.css";
 import React,{useState} from "react";
-const MovieCard = ({ title, score, description,src }) => {
+import { useNavigate } from 'react-router-dom';
+const MovieCard = ({ title, score, description,src,index }) => {
     
     const [mouseOver, setmouseOver] = useState(false)
+    const navigate = useNavigate();
 
     const handleMouseOver = () =>{
          setmouseOver(true)
@@ -11,11 +13,17 @@ const MovieCard = ({ title, score, description,src }) => {
     const handleMouseLeave = () =>{
         setmouseOver(false)
     }
+
+    const handleClick = () =>{
+    navigate("/MovieDetail/"+index);
+  }
     
   return (
     <div className="moviecard_frame"
     onMouseOver={handleMouseOver}
-    onMouseLeave={handleMouseLeave}>
+    onMouseLeave={handleMouseLeave}
+    onClick={handleClick}
+    >
       <img className="moviecard_image"
       src = {"https://image.tmdb.org/t/p/original"+src} />
       <div className="moviecard_infoframe">
